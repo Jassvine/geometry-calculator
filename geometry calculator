@@ -1,0 +1,57 @@
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int calculate, radius, length, width, base, height;
+	do
+	{
+		cout << "1. Calculate the area of circle\n";
+		cout << "2. Calculate the area of a rectangle\n";
+		cout << "3. Calculate the area of a triangle\n";
+		cout << "4. Quit\n";
+		cin >> calculate;
+
+		switch (calculate)
+		{
+		case 1:
+			cout << "pls calculate area of circle\n";
+			cout << "pls enter circle radius\n";
+			cin >> radius;
+			cout << "area of circle is" << 3.14159*radius*radius << endl;
+
+			break;
+
+		case 2:
+			cout << "pls calculate area of rectangle\n";
+			cout << "pls enter length and width of rectangle\n";
+			cin >> length >> width;
+			cout << "area of rectangle is" << length * width << endl;
+
+			break;
+
+		case 3:
+			cout << "pls calculate area of triangle\n";
+			cout << "pls enter length of triange base and height\n";
+			cin >> base >> height;
+			cout << "area of triangle is" << 0.5*base*height << endl;
+
+			break;
+
+		case 4:
+			cout << "quit";
+			cout << "programme will end.";
+
+			break;
+
+		default:
+			cout << "illegal input";
+			cout << "ERROR";
+		}
+
+		} while (calculate = !4);
+		cout << "tq ";
+		return 0;
+	
+}
